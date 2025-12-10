@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Form</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+ 
+    <!-- Header -->
+    <header> 
+      <img src="NIVESH R.jpg" width="200" height="200" alt="Profile Picture"> 
+      <h1 style="margin-left: 600px; margin-top: -100px;">Mr. NIVESH R - URK23CS1262</h1> 
+
+
+    <nav style="border-top: 2px solid black; margin-top: 90px; border-bottom: 2px solid black;">
+        <a style="margin-left: 10px;" href="#">Home</a>
+        <a style="margin-left: 250px;" href="#Personal">Information</a>
+        <a style="margin-left: 250px;" href="#pdf">Map</a>
+        <input style="margin-left: 250px;" type="search" placeholder="Search..." class="search-box">
+    </nav>
+    </header>
+    
+    
+    
+        <section class="skills-video" style="margin-top: 20px;"> 
+      <div class="skills" >
+        <p>HTML</p>
+        <progress style="background-color: green;"  value="98" max="100"></progress>
+        <p>CSS</p>
+        <progress style="background-color: green;" value="90" max="100"></progress>
+        <p>JavaScript</p>
+        <progress style="background-color: green;" value="70" max="100"></progress>
+        <p>Python</p>
+        <progress style="background-color: green;" value="91" max="100"></progress>
+      </div>
+
+    </section>
+    <div class="video-audio">
+        <video max-width="320" height="320" style="margin-top: -250px; margin-left: 600px;" controls>
+          <source src="vi 1.mp4" type="video/mp4">
+        </video>
+        <audio style="margin-top: 30px; margin-left: 600px;" controls>
+          <source src="mu 1.mp3" type="audio/mp3">
+        </audio>
+      </div>
+      
+
+    <!-- Form Section -->
+    <form id="Personal" class="form-section" style="border-top: 2px solid black; margin-top: 20px;" action="#" method="post" enctype="multipart/form-data" style="margin-top: 50px;">
+      <fieldset style="max-width: 400px; margin-top: 20px;" >
+        <legend>Personal Information</legend>
+        <label for="name">Username</label>
+        <input type="text" name="username" placeholder="Enter your name" required>*<br>
+        <br>
+        <label for="password" >Password</label>
+        <input type="password" name="password" maxlength="8" placeholder="Enter the password" required>*<br>
+        <br>
+        <label for="regno">Reg. No</label>
+        <input type="text" name="regno" placeholder="Enter your Reg. no" required>*<br>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" min="17" max="23" placeholder="age" required>*<br>
+        <br>
+        <label for="gender" >Gender</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female<br>
+        <br>
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" required>*<br>
+        <br>
+        <label for="color">Favorite Color</label>
+        <input type="color" name="color" required><br>
+        <br>
+        <label for="photo">Upload Photo</label>
+        <input type="file" name="photo" required>
+      </fieldset>
+      </form>
+
+
+      
+      <form class="form-section" style="margin-top: 20px;" action="#" method="post" enctype="multipart/form-data" style="margin-top: 50px;">
+        <fieldset style="max-width: 400px; margin-top: 20px; margin-left: 550px; margin-top: -360px;" >
+          <legend>Contact Information</legend>
+          <div style="display: flex; align-items: center; justify-content: space-between;"> 
+            <label for="address">Address</label>
+            <textarea name="address"  placeholder="Enter your Address" required></textarea><br>  
+          </div>
+          
+          <br>
+          
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label for="state">State</label>
+            <select name="state" required>
+              <option value="">Select</option>
+              <option>Tamil Nadu</option>
+              <option>Kerala</option>
+              <option>Andhra Pradesh</option>
+            </select><br>
+          </div>
+          
+          <br>
+          
+          <label for="state">Zipcode</label>
+          <input type="text" name="zipcode" maxlength="6"  placeholder="Enter the pincode" required><br>
+          
+          <br>
+          
+          <label for="phone">Mobile</label>
+          <input type="tel" name="phone" maxlength="10" placeholder="Enter your number" required><br>
+          
+          <br>
+          
+          <label for="email">Email</label>
+          <input type="email" name="email" required><br>
+          
+          <br>
+          
+          <label for="email"> Website</label>
+          <input type="url" name="url" required><br>
+          
+          <br>
+          
+          <input type="checkbox" required> I verify<br>
+          
+          <br>
+          
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>          
+        
+        
+    <!-- PDF & Map Section -->
+    <section id="pdf" class="media-section" style="margin-top: 20px; border-top: 2px solid black;"> 
+      <iframe style="margin-top: 20px; max-width:550px; max-height: 900px;" src="Web Tech Lab Manual EXP-2.pdf" width="100%" height="300px"></iframe>
+      </section>
+      <section style="max-width:900px; max-height: 950px; margin-top: 20px; margin-left: 660px; margin-top: -330px;" >
+      <iframe style="margin-top: 20px; max-width:550px; max-height: 900px;" src="https://www.google.com/maps?q=karunya+university&output=embed" width="100%" height="300px"></iframe>
+    </section>
+
+    <footer>   
+      Karunya Uiversity,Karunya Nagar.<br>
+      &copy; 2025. URK23CS1262 - Web Technology Lab Batch 5. All Rights Reserved.    
+    </footer>
+
+
+    </body>
+    </html>
